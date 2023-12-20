@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            body
+            {
+                margin: 0%;
+                padding: 0%;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background-color: hsl(235, 18%, 26%);
+                display: flex;
+            }
+            h2
+            {
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsl(234, 29%, 20%);
+                font-size: 30px;
+            }
+            p
+            {
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsla(235, 18%, 26%, 0.737);
+            }
+            button{
+                width: 100%;
+                height: 45px;
+                text-align: center;
+                border-radius: 6px;
+                border-width: 0.8px;
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsl(0, 0%, 100%);
+                background-color:hsl(234, 29%, 20%);
+                cursor: pointer;
+            }
+            div{
+                border-radius: 20px;
+                background-color: hsl(0, 0%, 100%);
+                padding: 32px;
+                max-width: 300px;
+            }
+            @media screen and (max-width:800px) {
+                body
+                {
+                    max-width:800px;
+                    background-color: hsl(0, 0%, 100%);
+                }
+                
+            }
+        </style>
+        <link rel="script" href="./script.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <img style="width: 10%;" src="./images/icon-success.svg">
+            <h2>Thanks for subscribing!</h2>
+            <p style="display: inline;">A confirmation email has been sent to your email. Please open it and click the button inside to confirm your subscription</p>
+            <br>
+            <br>
+            <button>Dismiss message</button>
+            <br>
+        </div>
+    </body>
+</html>

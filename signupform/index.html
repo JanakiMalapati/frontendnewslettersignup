@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | Newsletter sign-up form with success message hub</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                display: flex;
+                height: 100vh;
+                background-color: hsl(235, 18%, 26%);
+            }
+            h2
+            {
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsl(234, 29%, 20%);
+                font-size: 40px;
+            }
+            p
+            {
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsla(235, 18%, 26%, 0.737);
+            }
+            .email{
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsl(234, 29%, 20%);
+                font-size: 14px;
+            }
+            input[type="email"]
+            {
+                color: hsl(231, 7%, 60%);
+                width: 350px;
+                height: 40px;
+                font-size: 15px;
+                padding-left: 25px;
+                border-radius: 6px;
+                border-width: 0.8px;
+                border-color:hsl(231, 7%, 60%) ;
+            }
+            button{
+                width: 380px;
+                height: 45px;
+                text-align: center;
+                border-radius: 6px;
+                border-width: 0.8px;
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: hsl(0, 0%, 100%);
+                background-color:hsl(234, 29%, 20%);
+                cursor: pointer;
+            }
+            input[type="email"]:focus
+            {
+                border: none;
+                border-width: 0.8px;
+                border-color:hsl(4, 100%, 67%);
+                background-color: hsla(4, 100%, 67%, 0.638);
+            }
+            .maindiv
+            {
+                max-width: 800px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                background-color: hsl(0, 0%, 100%);
+            }
+            @media screen and (max-width:800px) {
+                .maindiv
+                {
+                    display: flex;
+                    flex-direction: column;
+                }
+                img
+                {
+                    align-items: baseline;
+                }
+            }
+        </style>
+        <link rel="script" href="./script.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="./success.html">
+        <div class="maindiv">
+            <div style="max-width: 50%;margin-left: 55px;margin-right: 20px;">
+                <br>
+                <br>
+                <h2>Stay updated!</h2>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <div style="line-height: 3px; display: flex;flex-direction: row;">
+                    <img style="width: 15px;margin-right: 10px;" src="./images/icon-list.svg">
+                    <p> Product discovery and building what matters</p>
+                </div>
+                <div style="line-height: 3px; display: flex;flex-direction: row;">
+                    <img style="width: 15px;margin-right: 10px;" src="./images/icon-list.svg">
+                    <p> Measuring to ensure updates are a success</p>
+                </div>
+                <div style="line-height: 3px; display: flex;flex-direction: row;">
+                    <img style="width: 15px;margin-right: 10px;" src="./images/icon-list.svg">
+                    <p>  And much more</p>
+                </div>
+                <p class="email">Email address</p>
+                <input type="email" class="nam" placeholder=" email@company.com" required>
+                <br><br>
+                <button onclick="emailid()">Subscribe to monthly newsletter</button>
+            </div>
+            <div style="display: flex;">
+                <img style="margin-right: 0%; max-width: 300px;padding: 15px; padding-bottom: 15px;" src="./images/illustration-sign-up-desktop.svg" align="right">
+            </div>
+        </div>
+    </form>
+    </body>
+</html>
